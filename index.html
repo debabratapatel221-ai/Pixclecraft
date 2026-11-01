@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+  <meta name="theme-color" content="#78a9d2">
+  <title>Pixclecraft — A Block World Adventure</title>
+  <link rel="stylesheet" href="./style.css">
+  <script type="importmap">
+    {"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js"}}
+  </script>
+</head>
+<body>
+  <div id="game"></div>
+  <div id="brand"><strong>PIX<em>CLE</em>CRAFT</strong><small>A BLOCK WORLD ADVENTURE</small></div>
+  <div id="stats"><span class="dot"></span> WORLD ONLINE <b id="coords">X 0 · Y 0 · Z 0</b></div>
+  <div id="crosshair">+</div>
+  <section id="welcome">
+    <div class="panel">
+      <div class="logo">P</div>
+      <h1>Welcome to Pixclecraft</h1>
+      <p>Explore a handcrafted voxel landscape. Break blocks, build freely, and make this world yours.</p>
+      <button id="play">ENTER WORLD</button>
+      <small>WASD move · Mouse look · Space jump · Left click mine · Right click place · 1–6 select</small>
+    </div>
+  </section>
+  <div id="hotbar"></div>
+  <div id="help">W A S D MOVE · SPACE JUMP<br>LEFT CLICK BREAK · RIGHT CLICK PLACE<br>ESC RELEASE MOUSE</div>
+  <div id="toast"></div>
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>
